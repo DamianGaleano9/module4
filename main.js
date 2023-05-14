@@ -184,3 +184,30 @@ another way of the comments
 
 // var num = 5 +(5 * 10 ) / 6 **2 -1;
 // console.log(num)
+
+var dataPoint = ;
+
+
+switch (typeof dataPoint) {
+    case "string":
+        console.log("It's a string");
+        break;
+
+    case "number":
+        console.log("It's a number");
+        break;
+
+    case "BoLean":
+        console.log("It's a boolean");
+        break;
+
+    case "Float":
+        console.log("It's a float");
+        break;
+        default:
+           console.log("No Matches") 
+
+}
+
+
+

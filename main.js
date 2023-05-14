@@ -120,10 +120,67 @@ another way of the comments
 // console.log(str.startsWith("The quick"))
 // console.log(str.endsWith("dog"))
 
-var str = "The quick brown fox jumped over the lazy dog"
+// var str = "The quick brown fox jumped over the lazy dog"
 
-console.log(str.repeat(3))
-console.log(str.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/));
-console.log('(555)555-5555'.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/));
+// console.log(str.repeat(3))
+// console.log(str.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/));
+// console.log('(555)555-5555'.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/));
 
-console.log(str.replace('fox', 'cow'))
+// console.log(str.replace('fox', 'cow'))
+// console.log('555-555-5555 is my phone number'.search(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/))
+// console.log(str.indexOf('lazy'))
+
+
+// var str2 = str.concat("and my yellow monkey and monkey")
+// console.log(str2)
+// console.log(str2.indexOf('monkey'))
+// console.log(str2.lastIndexOf('monkey'))
+
+// console.log(str2.charAt('45'))
+
+// var str = "The quick brown fox jumped over the lazy dog"
+
+
+// console.log(str.slice(10))
+// console.log(str.slice(-19))
+// console.log(str.slice(0, 9))
+// var nameStrange = "    Damian    "
+// console.log(nameStrange.trim())
+
+// var str = "The quick brown fox jumped over the lazy dog"
+// console.log(str.slice(4, 9))
+// console.log(str.toUpperCase())
+// console.log(str.toLowerCase())
+
+// var gradeOne = 200
+// var gradeTwo = 100
+
+// var sum = 0;
+
+// sum += gradeOne;
+// sum += gradeTwo
+// sum *= gradeOne
+
+// console.log(sum);
+
+
+// function mathTest() {
+//     var sum = 0;
+
+//     var lemons = 250;
+//     var limes = 36;
+
+//     var lemonade = lemons + limes;
+
+
+//     sum += lemonade;
+
+//     return sum
+// }
+
+
+// console.log(mathTest())
+
+
+// var num = 5 +(5 * 10 ) / 6 **2 -1;
+// console.log(num)

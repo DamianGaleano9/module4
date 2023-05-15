@@ -266,19 +266,26 @@ another way of the comments
 // console.log(adminControls(userThree))
 
 
-var userObje = {
-    email: "dj.damian.b",
-    fullName: "Damian Galeano"
-}
+
+// #Scope 
+// var userObje = {
+//     email: "dj.damian.b",
+//     fullName: "Damian Galeano"
+// }
 
 
-function dashboardGreeting() {
-    var userObje = {
-        email: "sample@example.com",
-        fullName: "Massimo Galeano"
-    }
-    console.log("Hi There, ".concat(userObje.fullName))
-}
+// function dashboardGreeting() {
+//     var userObje = {
+//         email: "sample@example.com",
+//         fullName: "Massimo Galeano"
+//     }
+//     console.log("Hi There, ".concat(userObje.fullName))
+// }
 
 
-console.log(dashboardGreeting())
+// console.log(userObje.fullName)
+
+
+const newName = "Damian";
+
+console.log(`Hy my name is ${newName}`);

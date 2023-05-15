@@ -185,29 +185,100 @@ another way of the comments
 // var num = 5 +(5 * 10 ) / 6 **2 -1;
 // console.log(num)
 
-var dataPoint = ;
+// var dataPoint = 9;
 
 
-switch (typeof dataPoint) {
-    case "string":
-        console.log("It's a string");
-        break;
+// switch (typeof dataPoint) {
+//     case "string":
+//         console.log("It's a string");
+//         break;
 
-    case "number":
-        console.log("It's a number");
-        break;
+//     case "number":
+//         console.log("It's a number");
+//         break;
 
-    case "BoLean":
-        console.log("It's a boolean");
-        break;
+//     case "BoLean":
+//         console.log("It's a boolean");
+//         break;
 
-    case "Float":
-        console.log("It's a float");
-        break;
-        default:
-           console.log("No Matches") 
+//     case "Float":
+//         console.log("It's a float");
+//         break;
+//         default:
+//            console.log("No Matches") 
 
+// }
+
+// function ageVerification(age) {
+// //     if(age > 19) {
+// //         console.log("You can rent a car ");
+// //     } else {
+// //         console.log("Is not enough to rent a car ");
+// //     }
+// // }
+
+// let answer = age > 19 ? "You can rent a car" : "Can'"
+//  console.log(answer)
+
+
+// }
+
+
+// ageVerification(21)
+// ageVerification(9)
+
+
+// function adminControls(user) {
+//     if(user) {
+//         if(user.admin) {
+//             return ("Showing admin controls");
+//         } else {
+//             return ("You need to be an admin");
+//         }
+        
+//     } else {
+//             return ("empty");
+//         }
+// }
+
+
+
+
+
+// const userOne = {
+//     name: "Damian",
+//     admin: true
+// };  
+
+
+// const userTwo = {
+//     name: "Salvador",
+//     admin: false
+// }
+
+
+// const userThree = {
+//     name: "Ana",
+//     admin: null
+// }
+// console.log(adminControls(userOne))
+// console.log(adminControls(userTwo))
+// console.log(adminControls(userThree))
+
+
+var userObje = {
+    email: "dj.damian.b",
+    fullName: "Damian Galeano"
 }
 
 
+function dashboardGreeting() {
+    var userObje = {
+        email: "sample@example.com",
+        fullName: "Massimo Galeano"
+    }
+    console.log("Hi There, ".concat(userObje.fullName))
+}
 
+
+console.log(dashboardGreeting())

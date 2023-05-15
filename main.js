@@ -33,7 +33,7 @@
 // var age = 35
 // console.log(age)
 
-//Some comments 
+//Some comments
 
 
 /*
@@ -56,7 +56,7 @@ another way of the comments
 // var nully = null
 // console.log(nully)
 
-// // Undefined 
+// // Undefined
 
 // var notDefined;
 // console.log(notDefined)
@@ -205,7 +205,7 @@ another way of the comments
 //         console.log("It's a float");
 //         break;
 //         default:
-//            console.log("No Matches") 
+//            console.log("No Matches")
 
 // }
 
@@ -235,7 +235,7 @@ another way of the comments
 //         } else {
 //             return ("You need to be an admin");
 //         }
-        
+
 //     } else {
 //             return ("empty");
 //         }
@@ -248,7 +248,7 @@ another way of the comments
 // const userOne = {
 //     name: "Damian",
 //     admin: true
-// };  
+// };
 
 
 // const userTwo = {
@@ -267,7 +267,7 @@ another way of the comments
 
 
 
-// #Scope 
+// #Scope
 // var userObje = {
 //     email: "dj.damian.b",
 //     fullName: "Damian Galeano"
@@ -286,6 +286,56 @@ another way of the comments
 // console.log(userObje.fullName)
 
 
-const newName = "Damian";
+// const newName = "Damian";
 
-console.log(`Hy my name is ${newName}`);
+// console.log(`Hy my name is ${newName}`);
+
+
+// function movieLine() {
+//     // Set your variable here
+//     var scream = "It's a trap!"
+//     return (`When they fell they knew it was a ${scream}`)
+// }
+
+// console.log(movieLine())
+
+
+// function movieLine() {
+//     // Set your variable here
+//     var scream = "It's a trap!"
+//     return (`When they fell they knew it was a ${scream}`)
+// }
+
+
+// console.log(movieLine())
+//  const page = "Something";
+//  console.log(`class= ${page === "Something" ? "Is truly" : "its false"}`)
+
+
+// var ship = "hit";
+
+// function battleShip() {
+//     return(`boat= ${ship === "hit" ? "1 point" : "You loss a point"}`)
+//   }
+
+
+// console.log(battleShip())
+
+
+// function fullName (fName, lName) {
+//     console.log(`${fName} ${lName}`);
+// }
+
+// fullName('Damian', 'Galeano');
+
+
+// Function Expression 
+
+
+fullName = function(fName, lName) {
+    console.log(`${fName} ${lName}`);
+}
+
+fullName("Dami", "Mazo");
+
+

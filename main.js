@@ -369,14 +369,110 @@ another way of the comments
 // console.log(headingGenarator('Paragrahp', 1))
 
 
-function Invoice() {
-    this.taxRate = 0.06;
+// function Invoice(subTotal) {
+//     this.taxRate = 0.06;
+//     this.subTotal = subTotal;
 
 
-    this.total = setInterval(function totalNumbers() {
-        console.log((this.taxRate * this.subTotal) + this.subTotal);
-    }, 2000);
-}
+//     this.total = setInterval(() => {
+//         console.log((this.taxRate * this.subTotal) + this.subTotal);
+//     }, 2000);
+// }
 
-const inv = new Invoice();
-console.log(inv);
+// const inv = new Invoice(200);
+// console.log(inv);
+
+
+// function SavingCalc(paycheck) {
+//     this.percent = 0.30;
+//     this.paycheck = paycheck;
+  
+//     this.deposit = () =>  {
+//       return (this.percent * this.paycheck)
+//     }
+//   }
+  
+//   const piggyBank = new SavingCalc(2000);
+//   console.log(piggyBank.deposit());
+
+// let playerOne = 'Damian';
+// let playerTwo = 'Ana';
+
+// let tempPlayerOne = playerOne;
+// let tempPplayerTwo = playerTwo;
+
+
+// playerOne = tempPplayerTwo;
+// playerTwo = tempPlayerOne;
+
+
+// console.log(`
+// player One: ${playerOne}
+// player Two: ${playerTwo}
+
+// `)
+
+
+
+// function roadRage() {
+//     let rightLane = "Chevy";
+//     let leftLane = "Honda";
+    
+//     //Write your code here to make the cars switch lanes
+//     [rightLane, leftLane] = [leftLane, rightLane];
+//     return (`That ${rightLane} and ${leftLane} won't pick a lane`)
+// }
+
+// console.log(roadRage());
+
+
+// function roadRage() {
+//     let rightLane = "Chevy";
+//     let leftLane = "Honda";
+    
+//     //Write your code here to make the cars switch lanes
+//     [rightLane, leftLane] = [leftLane, rightLane]
+    
+//     return (`That ${rightLane} and ${leftLane} won't pick a lane`)
+// }
+
+// console.log(roadRage());
+
+// #Destructuring
+
+
+// const apiList = [
+//     'https://api.dailysmarty.com/posts',
+//     'https://api.github.com/users/jordanhudgens/repos',
+//     'https://api.github.com/users/jordanhudgens'
+// ]
+
+// const [post, request, users] = apiList;
+// console.log(post)
+// console.log(request)
+// console.log(users)
+
+
+//Create and name your array list here 
+// mix = ['Iced Coffee', 'Roses', 'Kiwi'];
+
+// const [beverage, plant, fruit] = mix;
+// console.log(beverage)
+// console.log(plant)
+// console.log(fruit)
+
+const bank = {
+    accountNum: 454812259,
+    name: 'John Doe',
+    balance: 1257
+  }
+  
+  const bankInfo = ({accountNum, name, balance}) => {
+    return (`Hi ${name}! Your current balance is $${balance}. Account#: ${accountNum}.`)
+  }
+  
+  
+  console.log(bankInfo(bank));
+
+
+

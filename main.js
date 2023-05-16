@@ -332,10 +332,51 @@ another way of the comments
 // Function Expression 
 
 
-fullName = function(fName, lName) {
-    console.log(`${fName} ${lName}`);
+// fullName = function(fName, lName) {
+//     console.log(`${fName} ${lName}`);
+// }
+
+// fullName("Dami", "Mazo");
+
+
+// helloWorld = () => {console.log("Hy Damian")}
+// helloWorld()
+
+// nameLower = (fName, lName) => {console.log(`${fName} ${lName}`.toUpperCase())};
+// nameLower('Damian', 'Mazo')
+
+
+// userInfo = (city, state, zip) => {
+    
+//     return (`${city} ${state} ${zip}`);
+// };
+
+// console.log(userInfo('Lehi', 'UT', 84043))
+
+// userInfo = (city, state, zip) => {return (`${city} ${state} ${zip}`);}
+
+// console.log(userInfo('Lehi', 'UT', 84043));
+
+
+// const headingGenarator = (title, typeOfHeading) => {
+//     return `
+//         <h${typeOfHeading}>${title}</h${typeOfHeading}>
+//      `
+// }
+
+
+// console.log(headingGenarator('Heading', 2))
+// console.log(headingGenarator('Paragrahp', 1))
+
+
+function Invoice() {
+    this.taxRate = 0.06;
+
+
+    this.total = setInterval(function totalNumbers() {
+        console.log((this.taxRate * this.subTotal) + this.subTotal);
+    }, 2000);
 }
 
-fullName("Dami", "Mazo");
-
-
+const inv = new Invoice();
+console.log(inv);

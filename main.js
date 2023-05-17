@@ -461,18 +461,97 @@ another way of the comments
 // console.log(plant)
 // console.log(fruit)
 
-const bank = {
-    accountNum: 454812259,
-    name: 'John Doe',
-    balance: 1257
-  }
+// const bank = {
+//     accountNum: 454812259,
+//     name: 'John Doe',
+//     balance: 1257
+//   }
   
-  const bankInfo = ({accountNum, name, balance}) => {
-    return (`Hi ${name}! Your current balance is $${balance}. Account#: ${accountNum}.`)
-  }
+//   const bankInfo = ({accountNum, name, balance}) => {
+//     return (`Hi ${name}! Your current balance is $${balance}. Account#: ${accountNum}.`)
+//   }
   
   
-  console.log(bankInfo(bank));
+//   console.log(bankInfo(bank));
+
+
+
+
+// const vapers = {
+//   vaporesso: "Target 100",
+//   smok: "Rpm80",
+//   lostVape: "geek"
+// };
+
+
+
+// const  getVapers = ({vaporesso, smok, lostVape}) => {
+//   return (`Top vapers for my is ${vaporesso} ${smok} ${lostVape}`);
+// };
+
+
+// console.log(vapers)
+
+// const blog = {
+//   title: 'My title',
+// };
+
+
+// const openGraphMetaData = ({title, summary = "My Default Title"}) => {
+//   console.log(`
+//     my Ti: ${title}
+//     my Sm: ${summary}`);
+// };
+
+// console.log(openGraphMetaData(blog));
+
+
+// const  user = {
+//   username: 'Damian'
+// };
+
+// const loginEvent = ({username, status = 'active'}) => {
+//   return `
+//   your ${username}
+//   is ${status}
+//   `
+// };
+
+// console.log(loginEvent(user));
+
+// const user = {
+//   username: 'Damian',
+//   status: 'away'
+// };
+
+// const loginEvent = (user) => {
+//   user.status = 'active'
+//   return (`
+//   your ${user.username}
+//   is ${user.status}
+//   `);
+// };
+
+// console.log(loginEvent(user));
+
+
+
+const user = {
+  username: 'Damian',
+  status: 'away'
+}
+
+const loginEvent = (user) => {
+  user.status = 'active'
+  return (`
+  ${user.username}
+  is ${user.status}`);
+};
+
+console.log(loginEvent(user));
+
+
+
 
 
 

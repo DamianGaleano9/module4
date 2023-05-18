@@ -536,20 +536,65 @@ another way of the comments
 
 
 
-const user = {
-  username: 'Damian',
-  status: 'away'
+// const user = {
+//   username: 'Damian',
+//   status: 'away'
+// }
+
+// const loginEvent = (user) => {
+//   user.status = 'active'
+//   return (`${user.username} is ${user.status}`);
+// };
+
+// console.log(loginEvent(user));
+
+
+// function yourTest() {
+//   const highscore = [237.0198, 256.1, 234.846, 237.21, 256.654];
+  
+//   return (Math.max(...highscore));
+// }
+
+// console.log(yourTest());
+
+
+// function numberMostBigger() {
+//   const myArray= [1, 2, 3, 8, 99, 23];
+//   return (Math.max(...myArray))
+// };
+
+// console.log(numberMostBigger())
+
+// #Combining Arrays;
+
+
+// let shoppingCart = [399, 32, 29, 9, 99];
+// let newItems = [3, 6, 1999];
+
+// shoppingCart.push(...newItems);
+// console.log(shoppingCart)
+
+// #Copyng Arrays;
+
+// let shoppingCart = [399, 32, 29, 9, 99];
+// // let updateShopping = (shoppingCart.slice()) //The Same Behavior 
+// let updateShopping = [... shoppingCart];
+// updateShopping.push(2);
+
+// console.log(shoppingCart);
+// console.log(updateShopping);
+
+const {starter, closer, ...relieves } = {
+    starter: 'Damian',
+    closer: 'Salva',
+    relief_1: 'Massi',
+    relief_2: 'Ana'
 }
 
-const loginEvent = (user) => {
-  user.status = 'active'
-  return (`
-  ${user.username}
-  is ${user.status}`);
-};
 
-console.log(loginEvent(user));
-
+console.log(starter);
+console.log(closer);
+console.log(relieves);
 
 
 

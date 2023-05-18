@@ -347,7 +347,7 @@ another way of the comments
 
 
 // userInfo = (city, state, zip) => {
-    
+
 //     return (`${city} ${state} ${zip}`);
 // };
 
@@ -386,12 +386,12 @@ another way of the comments
 // function SavingCalc(paycheck) {
 //     this.percent = 0.30;
 //     this.paycheck = paycheck;
-  
+
 //     this.deposit = () =>  {
 //       return (this.percent * this.paycheck)
 //     }
 //   }
-  
+
 //   const piggyBank = new SavingCalc(2000);
 //   console.log(piggyBank.deposit());
 
@@ -417,7 +417,7 @@ another way of the comments
 // function roadRage() {
 //     let rightLane = "Chevy";
 //     let leftLane = "Honda";
-    
+
 //     //Write your code here to make the cars switch lanes
 //     [rightLane, leftLane] = [leftLane, rightLane];
 //     return (`That ${rightLane} and ${leftLane} won't pick a lane`)
@@ -429,10 +429,10 @@ another way of the comments
 // function roadRage() {
 //     let rightLane = "Chevy";
 //     let leftLane = "Honda";
-    
+
 //     //Write your code here to make the cars switch lanes
 //     [rightLane, leftLane] = [leftLane, rightLane]
-    
+
 //     return (`That ${rightLane} and ${leftLane} won't pick a lane`)
 // }
 
@@ -466,12 +466,12 @@ another way of the comments
 //     name: 'John Doe',
 //     balance: 1257
 //   }
-  
+
 //   const bankInfo = ({accountNum, name, balance}) => {
 //     return (`Hi ${name}! Your current balance is $${balance}. Account#: ${accountNum}.`)
 //   }
-  
-  
+
+
 //   console.log(bankInfo(bank));
 
 
@@ -551,7 +551,7 @@ another way of the comments
 
 // function yourTest() {
 //   const highscore = [237.0198, 256.1, 234.846, 237.21, 256.654];
-  
+
 //   return (Math.max(...highscore));
 // }
 
@@ -584,18 +584,51 @@ another way of the comments
 // console.log(shoppingCart);
 // console.log(updateShopping);
 
-const {starter, closer, ...relieves } = {
-    starter: 'Damian',
-    closer: 'Salva',
-    relief_1: 'Massi',
-    relief_2: 'Ana'
+// const {starter, closer, ...relieves } = {
+//     starter: 'Damian',
+//     closer: 'Salva',
+//     relief_1: 'Massi',
+//     relief_2: 'Ana'
+// }
+
+
+// console.log(starter);
+// console.log(closer);
+// console.log(relieves);
+
+
+// const userOne = {
+//     firstName: 'Damian',
+//     lastName: 'Galeano'
+// };
+
+// const userTwo = {
+//     firstName: 'Salvador',
+//     lastName: 'Galeano'
+// };
+
+
+// const fullname = function() {
+//     return `${this.lastName} ${this.firstName}`;
+// };
+
+// const Damian = fullname.bind(userOne);
+// const Salva = fullname.bind(userTwo);
+
+
+// console.log(Damian())
+// console.log(Salva())
+
+
+class Account {
+    constructor({ username, password }) {
+        this.username = username;
+        this.password = password;
+    }
 }
 
-
-console.log(starter);
-console.log(closer);
-console.log(relieves);
-
+const user = new Account({ username: 'Damian', password: 9999 });
+user;
 
 
 

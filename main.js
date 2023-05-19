@@ -620,16 +620,52 @@ another way of the comments
 // console.log(Salva())
 
 
-class Account {
-    constructor({ username, password }) {
-        this.username = username;
-        this.password = password;
+// class Account {
+//     constructor({ username, password }) {
+//         this.username = 'username';
+//         this.password = 'password';
+//     }
+// }
+
+// const user = new Account({ username: 'Damian', password: 9999 });
+// console.log(user);
+
+
+
+
+// class Car {
+// 	constructor({ year, brand, poweredBy = 'gas' }) {
+// 		this.year = year;
+// 		this.brand = brand;
+// 		this.poweredBy = poweredBy;
+// 	}
+
+// 	carSpecs() {
+// 		return(`The ${this.year} ${this.brand} runs on ${this.poweredBy}`)
+// 	}
+// }
+
+// const model3 = new Car({year: 2023, brand: 'Tesla', poweredBy: 'electricity'});
+// model3
+
+
+class Instructor {
+    constructor({name, role = 'assistant'}) {
+        this.name = name;
+        this.role = role;
+    }
+
+    renderDetails() {
+        console.log(`${this.name}: ${this.role}`)
+    }
+    
+
+    static helloWorld() {
+        console.log('Hi there');
     }
 }
 
-const user = new Account({ username: 'Damian', password: 9999 });
-user;
+const damian = new Instructor({name: 'Damian Galeano'});
+const ana = new Instructor({name: 'Ana', role: 'Admin'});
 
-
-
-
+console.log(damian.renderDetails());

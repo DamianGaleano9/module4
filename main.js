@@ -663,9 +663,36 @@ class Instructor {
     static helloWorld() {
         console.log('Hi there');
     }
+
+
+	static canTeach(Instructor){
+		return (Instructor.role === 'classroom');
+	}
 }
 
-const damian = new Instructor({name: 'Damian Galeano'});
+const damian = new Instructor({name: 'Damian Galeano', role: 'classroom'});
 const ana = new Instructor({name: 'Ana', role: 'Admin'});
 
-console.log(damian.renderDetails());
+
+
+console.log(`
+	${damian.name} can teach: ${Instructor.canTeach(damian)}`);
+
+
+console.log(`
+	${ana.name} can Teach: ${Instructor.canTeach(ana)}`)
+
+
+
+// class Home {
+// 	constructor({ type, payment = "renting" }) {
+// 		this.type = type;
+// 		this.payment = payment;
+// 	}
+
+// 	static homeImprovement(yourHome) {
+// 		return (yourHome.payment === 'mortgage')
+// 	}
+// }
+
+// const choice1 = new Home({type: 'house'})

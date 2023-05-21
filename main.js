@@ -649,38 +649,38 @@ another way of the comments
 // model3
 
 
-class Instructor {
-    constructor({name, role = 'assistant'}) {
-        this.name = name;
-        this.role = role;
-    }
+// class Instructor {
+//     constructor({name, role = 'assistant'}) {
+//         this.name = name;
+//         this.role = role;
+//     }
 
-    renderDetails() {
-        console.log(`${this.name}: ${this.role}`)
-    }
-    
-
-    static helloWorld() {
-        console.log('Hi there');
-    }
+//     renderDetails() {
+//         console.log(`${this.name}: ${this.role}`)
+//     }
 
 
-	static canTeach(Instructor){
-		return (Instructor.role === 'classroom');
-	}
-}
-
-const damian = new Instructor({name: 'Damian Galeano', role: 'classroom'});
-const ana = new Instructor({name: 'Ana', role: 'Admin'});
+//     static helloWorld() {
+//         console.log('Hi there');
+//     }
 
 
+// 	static canTeach(Instructor){
+// 		return (Instructor.role === 'classroom');
+// 	}
+// }
 
-console.log(`
-	${damian.name} can teach: ${Instructor.canTeach(damian)}`);
+// const damian = new Instructor({name: 'Damian Galeano', role: 'classroom'});
+// const ana = new Instructor({name: 'Ana', role: 'Admin'});
 
 
-console.log(`
-	${ana.name} can Teach: ${Instructor.canTeach(ana)}`)
+
+// console.log(`
+// 	${damian.name} can teach: ${Instructor.canTeach(damian)}`);
+
+
+// console.log(`
+// 	${ana.name} can Teach: ${Instructor.canTeach(ana)}`)
 
 
 
@@ -695,4 +695,49 @@ console.log(`
 // 	}
 // }
 
-// const choice1 = new Home({type: 'house'})
+// const choice1 = new Home({type: 'house', payment: 'mortgage'});
+// const choice2 = new Home({type: 'apartment'});
+
+// console.log(Home.homeImprovement(choice1));
+// console.log(Home.homeImprovement(choice2));
+
+
+
+// class Father {
+// 	constructor({ name, age, color }) {
+// 		this.name = name;
+// 		this.age = age;
+// 	};
+
+// 	greetings() {
+// 		return (`Hi ${this.name} you have ${this.age} old`);
+// 	}
+
+// 	static Loggin(Father) {
+// 		return ('You wanna loggin');
+// 	}
+
+// };
+
+
+// damian = new Father({ name: 'Damian', age: 35 });
+// salvador = new Father({ name: 'Salvador', age: 5 });
+// massimo = new Father({ name: 'Massimo', age: 1 });
+// ana = new Father({ name: 'Ana', age: 29 });
+
+
+// console.log(`
+// ${damian.greetings()} maybe ${Father.Loggin()}
+// `)
+
+// console.log(`
+// ${ana.greetings()} maybe ${Father.Loggin()}
+// `)
+
+// console.log(`
+// ${massimo.greetings()} maybe ${Father.Loggin()}
+// `)
+
+// console.log(`
+// ${salvador.greetings()} maybe ${Father.Loggin()}
+// `)

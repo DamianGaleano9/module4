@@ -748,10 +748,10 @@ let sleepyGreeting = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('Hello...')
     }, 2000);
-
+ 
     setTimeout(() => {
         reject(Error('Too sleepy for me'))
-    }, 2000);
+    }, 8000);
 });
 
 
@@ -763,3 +763,7 @@ sleepyGreeting
     .catch(err => {
     console.error(err);
 });
+   
+
+
+

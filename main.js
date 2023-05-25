@@ -744,26 +744,75 @@ another way of the comments
 
 
 
-let sleepyGreeting = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('Hello...')
-    }, 2000);
+// let sleepyGreeting = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('Hello...')
+//     }, 2000);
  
-    setTimeout(() => {
-        reject(Error('Too sleepy for me'))
-    }, 8000);
-});
+//     setTimeout(() => {
+//         reject(Error('Too sleepy for me'))
+//     }, 8000);
+// });
 
 
-sleepyGreeting
-    .then(data => {
-        console.log(data);
-    })
+// sleepyGreeting
+//     .then(data => {
+//         console.log(data);
+//     })
 
-    .catch(err => {
-    console.error(err);
-});
+//     .catch(err => {
+//     console.error(err);
+// });
+
+
+// How to Group Promises Together with Promise.all in JavaScript
+
+// const greeting = new Promise((resolve, rejeact) => {
+//     resolve('Everything works');
+//     rejeact('Oops something failure')
+// });
    
 
 
+// const updateAccount = new Promise((resolve, rejeact) => {
+//     resolve('Update account');
+//     rejeact('Error Acount');
+// });
 
+// const mixPromises = Promise.all([greeting, updateAccount]);
+
+// mixPromises.then(res => {
+//     res.forEach(activity => {
+//         console.log(activity)
+//     })
+// });
+
+const user1 = () => {
+    return new Promise((resolve, rejeact) => {
+        setTimeout(() => {
+            resolve("I'm Here");
+        }, 2000);
+    })
+}
+
+const user2 = () => {
+    return new Promise((resolve, rejeact) => {
+        setTimeout(() => {
+            resolve("Another User here");
+        }, 2000);
+    })
+}
+
+async function users() {
+    const userUpdate = await user1();
+    console.log(userUpdate);
+};
+
+
+async function users2() {
+    const userUpdate2 = await user2();
+    console.log(userUpdate2);
+}   
+
+console.log(users());
+console.log(users2());

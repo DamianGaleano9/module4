@@ -787,32 +787,63 @@ another way of the comments
 //     })
 // });
 
-const user1 = () => {
+// const user1 = () => {
+//     return new Promise((resolve, rejeact) => {
+//         setTimeout(() => {
+//             resolve("I'm Here");
+//         }, 2000);
+//     })
+// }
+
+// const user2 = () => {
+//     return new Promise((resolve, rejeact) => {
+//         setTimeout(() => {
+//             resolve("Another User here");
+//         }, 2000);
+//     })
+// }
+
+// async function users() {
+//     const userUpdate = await user1();
+//     console.log(userUpdate);
+// };
+
+
+// async function users2() {
+//     const userUpdate2 = await user2();
+//     console.log(userUpdate2);
+// }   
+
+// console.log(users());
+// console.log(users2());
+
+
+
+const login = () => {
     return new Promise((resolve, rejeact) => {
         setTimeout(() => {
-            resolve("I'm Here");
+            resolve('Logged');
         }, 2000);
-    })
+    });
 }
 
-const user2 = () => {
+
+
+const updateLogged = () => {
     return new Promise((resolve, rejeact) => {
         setTimeout(() => {
-            resolve("Another User here");
-        }, 2000);
-    })
+            resolve('Working');
+        }, 4000);
+    });
 }
 
-async function users() {
-    const userUpdate = await user1();
-    console.log(userUpdate);
+
+async function closureFunction(login, updateLogged) {
+    const closureLogging = await login;
+    console.log(closureLogging);
+
+    const closureupdate = await updateLogged;
+    console.log(closureupdate)
 };
 
-
-async function users2() {
-    const userUpdate2 = await user2();
-    console.log(userUpdate2);
-}   
-
-console.log(users());
-console.log(users2());
+closureFunction(login(), updateLogged());

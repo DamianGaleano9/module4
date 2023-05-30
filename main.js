@@ -748,7 +748,7 @@ another way of the comments
 //     setTimeout(() => {
 //         resolve('Hello...')
 //     }, 2000);
- 
+
 //     setTimeout(() => {
 //         reject(Error('Too sleepy for me'))
 //     }, 8000);
@@ -771,7 +771,7 @@ another way of the comments
 //     resolve('Everything works');
 //     rejeact('Oops something failure')
 // });
-   
+
 
 
 // const updateAccount = new Promise((resolve, rejeact) => {
@@ -819,31 +819,86 @@ another way of the comments
 
 
 
-const login = () => {
-    return new Promise((resolve, rejeact) => {
-        setTimeout(() => {
-            resolve('Logged');
-        }, 2000);
-    });
-}
+// const login = () => {
+//     return new Promise((resolve, rejeact) => {
+//         setTimeout(() => {
+//             resolve('Logged');
+//         }, 2000);
+//     });
+// }
 
 
 
-const updateLogged = () => {
-    return new Promise((resolve, rejeact) => {
-        setTimeout(() => {
-            resolve('Working');
-        }, 4000);
-    });
-}
+// const updateLogged = () => {
+//     return new Promise((resolve, rejeact) => {
+//         setTimeout(() => {
+//             resolve('Working');
+//         }, 4000);
+//     });
+// }
 
 
-async function closureFunction(login, updateLogged) {
-    const closureLogging = await login;
-    console.log(closureLogging);
+// async function closureFunction(login, updateLogged) {
+//     const closureLogging = await login;
+//     console.log(closureLogging);
 
-    const closureupdate = await updateLogged;
-    console.log(closureupdate)
-};
+//     const closureupdate = await updateLogged;
+//     console.log(closureupdate)
+// };
 
-closureFunction(login(), updateLogged());
+// closureFunction(login(), updateLogged());
+
+
+
+
+// https://api.dailysmarty.com/posts
+// https://api.github.com/users/damiangaleano9/repos
+
+
+// async function queryApis() {
+//     const postPromises = fetch('https://api.dailysmarty.com/posts');
+//     const post = await postPromises.then(res => res.json());
+//     console.log(post);
+
+//     const resposPromises = fetch('https://api.github.com/users/damiangaleano9/repos');
+//     const repos = await resposPromises.then(res => res.json());
+//     console.log(repos)
+
+// };
+
+
+// queryApis();
+
+
+// async function queryApis() {
+//     try {
+//         const postPromises = fetch('https://api.dailysmarty.com/posts');
+//         const post = await postPromises.then(res => res.json());
+//         console.log(post);
+//     } catch (err) {
+//         console.log(err);
+//         console.log('Problems Api Daily');
+
+//     }
+//     try {
+//         const resposPromises = fetch('https://api.githu.com/users/damiangaleano9/repos');
+//         const repos = await resposPromises.then(res => res.json());
+//         console.log(repos)
+//     } catch (err) {
+//         console.log(err);
+//         console.log('There was an error Github')
+//     }
+// };
+
+
+// queryApis();
+
+
+
+
+
+
+
+
+
+

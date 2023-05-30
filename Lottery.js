@@ -16,4 +16,4 @@ const weights = {
     losing: 1000
 }
 
-weightedLottery(weights);
+console.log(weightedLottery(weights));

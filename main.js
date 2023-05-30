@@ -893,12 +893,16 @@ another way of the comments
 
 // queryApis();
 
+randNumber = () => {
+    return Math.round(Math.random() * 9);
+}
+
+console.log(randNumber());
+console.log(randNumber());
 
 
-
-
-
-
+const sampleNumbers = _.times(3, randNumber);
+console.log(sampleNumbers);
 
 
 

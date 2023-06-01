@@ -893,16 +893,76 @@ another way of the comments
 
 // queryApis();
 
-randNumber = () => {
-    return Math.round(Math.random() * 9);
+// randNumber = () => {
+//     return Math.round(Math.random() * 9);
+// }
+
+// console.log(randNumber());
+// console.log(randNumber());
+
+
+// const sampleNumbers = _.times(3, randNumber);
+// console.log(sampleNumbers);
+
+
+
+// const players = [
+//     { name: 'Bregman, A',  battingAverage: 0.284 },
+//     { name: 'Altuve, J',   battingAverage: 0.346 },
+//     { name: 'Springer, G', battingAverage: 0.283 },
+//     { name: 'Gurriel, Y',  battingAverage: 0.299 },
+//     { name: 'Gonzalez, M', battingAverage: 0.303 }
+//   ];
+
+
+// const myFilterFunction = _.filter(players, player =>  {
+//     return player.battingAverage > 0.300;
+// });
+
+// const averagedown = _.filter(players , player => {
+//     return player.battingAverage < 0.299;
+// });
+
+// console.log(myFilterFunction);
+// console.log(averagedown)
+
+// const randonm = _.times(2, myFilterFunction);
+// console.log(randonm)
+
+
+// const roster = [
+//     { position: '3B', name: 'Bregman, A' },
+//     { position: '2B', name: 'Altuve, J' },
+//     { position: 'CF', name: 'Springer, G' },
+//     { position: '1B', name: 'Gurriel, Y' },
+//     { position: 'LF', name: 'Gonzalez, M' }
+//   ]
+
+
+//   const position = _.keyBy(roster, 'position');
+//   console.log(position);
+
+
+
+// function adminActions(func) {
+// 	return func();
+// }
+
+// buttons = () => {
+// 	return '<button>Admin Dashboard</button>';
+// }
+
+// try {
+// 	console.log(adminActions(buttons));
+// } catch(e) {
+// 	console.log('No admin is logged in', e);
+// }
+
+
+class SocialMediaError extends Error {
+    constructor(msg='An Error ocurred now', ...params) {
+        super(...params);
+
+        this.msg = msg;
+    }
 }
-
-console.log(randNumber());
-console.log(randNumber());
-
-
-const sampleNumbers = _.times(3, randNumber);
-console.log(sampleNumbers);
-
-
-

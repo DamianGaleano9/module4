@@ -959,10 +959,88 @@ another way of the comments
 // }
 
 
-class SocialMediaError extends Error {
-    constructor(msg='An Error ocurred now', ...params) {
-        super(...params);
+// class SocialMediaError extends Error {
+//     constructor(msg='An error ocurred', ...params) {
+//         super(...params);
+        
+//         this.msg = msg
+//     }
+// }
 
-        this.msg = msg;
-    }
-}
+
+// KBAY 
+
+
+// const roster = [
+//     { position: '3B', name: 'Bregman, A' },
+//     { position: '2B', name: 'Altuve, J' },
+//     { position: 'CF', name: 'Springer, G' },
+//     { position: '1B', name: 'Gurriel, Y' },
+//     { position: 'LF', name: 'Gonzalez, M' }
+//   ]
+
+//   const positions = _.keyBy(roster, 'position');
+
+//   const secondBase = positions['2B'];
+//   console.log(positions);
+//   console.log(secondBase);
+
+// Reduce
+
+const myReduce = _.reduce([1, 2, 3, 4], function(total, num) {
+    return total + num;
+}, 1000);
+
+
+console.log(myReduce)
+
+let arr = [
+    [1, 2, 3],
+    [4, 5, 6, 7, 8],
+    [9, 10, 1, 2]
+];
+
+
+const mychunk = _.chunk(arr, 6);
+console.log(mychunk);
+
+
+const homerunStats = [
+    { name: 'Bregman, A',  hr: 19 },
+    { name: 'Altuve, J',   hr: 24 },
+    { name: 'Springer, G', hr: 34 },
+    { name: 'Gurriel, Y',  hr: 18 },
+    { name: 'Gonzalez, M', hr: 23 }
+  ];
+
+  const homeRuns = _.reduce(homerunStats, function(total, player) {
+    return total + player.hr;
+  },0);
+
+
+  console.log(homeRuns);
+
+
+  const links = [
+    "https://google.com",
+    "https://devcamp.com",
+    "https://airbnb.com"
+  ];
+
+
+  const webLinks = _.reduce(links, function(content, link) {
+    return `<a href=${link}>${link}</a><br>`.concat(content);
+  }, '');
+
+  console.log(webLinks);
+
+
+  randNumber = () => {
+    return _.random(1, 1000);
+  }
+
+  console.log(randNumber());
+
+
+  const lodasNumbers = _.times(2, randNumber);
+  console.log(lodasNumbers);

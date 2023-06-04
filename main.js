@@ -987,38 +987,38 @@ another way of the comments
 
 // Reduce
 
-const myReduce = _.reduce([1, 2, 3, 4], function(total, num) {
-    return total + num;
-}, 1000);
+// const myReduce = _.reduce([1, 2, 3, 4], function(total, num) {
+//     return total + num;
+// }, 1000);
 
 
-console.log(myReduce)
+// console.log(myReduce)
 
-let arr = [
-    [1, 2, 3],
-    [4, 5, 6, 7, 8],
-    [9, 10, 1, 2]
-];
-
-
-const mychunk = _.chunk(arr, 6);
-console.log(mychunk);
+// let arr = [
+//     [1, 2, 3],
+//     [4, 5, 6, 7, 8],
+//     [9, 10, 1, 2]
+// ];
 
 
-const homerunStats = [
-    { name: 'Bregman, A',  hr: 19 },
-    { name: 'Altuve, J',   hr: 24 },
-    { name: 'Springer, G', hr: 34 },
-    { name: 'Gurriel, Y',  hr: 18 },
-    { name: 'Gonzalez, M', hr: 23 }
-  ];
-
-  const homeRuns = _.reduce(homerunStats, function(total, player) {
-    return total + player.hr;
-  },0);
+// const mychunk = _.chunk(arr, 6);
+// console.log(mychunk);
 
 
-  console.log(homeRuns);
+// const homerunStats = [
+//     { name: 'Bregman, A',  hr: 19 },
+//     { name: 'Altuve, J',   hr: 24 },
+//     { name: 'Springer, G', hr: 34 },
+//     { name: 'Gurriel, Y',  hr: 18 },
+//     { name: 'Gonzalez, M', hr: 23 }
+//   ];
+
+//   const homeRuns = _.reduce(homerunStats, function(total, player) {
+//     return total + player.hr;
+//   },0);
+
+
+//   console.log(homeRuns);
 
 
   const links = [
@@ -1029,18 +1029,27 @@ const homerunStats = [
 
 
   const webLinks = _.reduce(links, function(content, link) {
+    debugger;
     return `<a href=${link}>${link}</a><br>`.concat(content);
   }, '');
 
   console.log(webLinks);
 
 
-  randNumber = () => {
-    return _.random(1, 1000);
-  }
+//   randNumber = () => {
+//     return _.random(1, 1000);
+//   }
 
-  console.log(randNumber());
+//   console.log(randNumber());
 
 
-  const lodasNumbers = _.times(2, randNumber);
-  console.log(lodasNumbers);
+//   const lodasNumbers = _.times(2, randNumber);
+//   console.log(lodasNumbers);
+
+
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+
+console.log(sum(2, 9));

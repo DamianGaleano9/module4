@@ -1021,19 +1021,19 @@ another way of the comments
 //   console.log(homeRuns);
 
 
-  const links = [
-    "https://google.com",
-    "https://devcamp.com",
-    "https://airbnb.com"
-  ];
+//   const links = [
+//     "https://google.com",
+//     "https://devcamp.com",
+//     "https://airbnb.com"
+//   ];
 
 
-  const webLinks = _.reduce(links, function(content, link) {
-    debugger;
-    return `<a href=${link}>${link}</a><br>`.concat(content);
-  }, '');
+//   const webLinks = _.reduce(links, function(content, link) {
+//     debugger;
+//     return `<a href=${link}>${link}</a><br>`.concat(content);
+//   }, '');
 
-  console.log(webLinks);
+//   console.log(webLinks);
 
 
 //   randNumber = () => {
@@ -1047,9 +1047,11 @@ another way of the comments
 //   console.log(lodasNumbers);
 
 
-function sum(num1, num2) {
-    return num1 + num2;
-}
+// function sum(num1, num2) {
+//     return num1 + num2;
+// }
 
 
-console.log(sum(2, 9));
+// console.log(sum(2, 9));
+
+

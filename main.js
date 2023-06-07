@@ -1055,3 +1055,33 @@ another way of the comments
 // console.log(sum(2, 9));
 
 
+
+class Dog {
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+
+
+    sayGua() {
+        return 'Gua Gua';
+    }
+
+    static SayMiauuu() {
+        return 'Miauu miuaa'
+    }
+}
+
+
+class doggy extends Dog {
+    constructor(name, color, age){
+        super(name, color, age) 
+        this.name = name;
+        this.color = color;
+        this.age = age;
+    }
+};
+
+const myPet = new doggy('Criollo', 'brown');
+
+console.log(myPet.sayGua)
